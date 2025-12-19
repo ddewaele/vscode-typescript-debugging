@@ -4,6 +4,8 @@
   "description": "Simple typescript project to demonstrate typescript debugging in VSCode",
   "main": "index.js",
   "scripts": {
+    "tsx": "tsx",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

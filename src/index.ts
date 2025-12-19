@@ -1,18 +1,18 @@
-import { ChatOpenAI } from "@langchain/openai";
 import * as dotenv from 'dotenv';
+import { Todo } from "./todo";
 
 dotenv.config()
 
 
 async function main() {
-    const model = new ChatOpenAI({
-        model: "gpt-4o-mini",
-        temperature: 0,
-    });
 
-    const res = await model.invoke("hello");
+    const todo = new Todo(1, "Finish TypeScript project....", false, "major");
+    console.log("Initial Todo:", todo);
 
-    console.log("Response:", res.content);
+    todo.toggleCompletion();
+    console.log("After toggling completion:", todo);
+
+
 }
 
 main().catch(console.error);
