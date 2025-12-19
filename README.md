@@ -54,11 +54,27 @@ It is a lot broaster than the pure NodeJS CommonJS. ESM works in browsers , Node
 
 ### package.json
 
+Specify `type="module"` in your `package.json`
 
 
 ### tsconfig.json
 
 
+```
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "strict": true,
+        "outDir": "dist",
+        "sourceMap": true
+    },
+    "include": [
+        "src"
+    ]
+}
+```
 
 ## VSCode Launch Config
 

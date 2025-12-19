@@ -1,5 +1,5 @@
 import * as dotenv from 'dotenv';
-import { Todo } from "./todo";
+import { Todo } from "./todo.js";
 
 dotenv.config()
 
