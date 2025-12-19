@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "tsx",
+            "type": "node",
+            "request": "launch",
+            // if a dist folder is present it will launch the compiled js files instead of ts files. why ? no idea ..
+            "program": "${file}",
+            // "program": "${workspaceFolder}/src/index.ts",
+
+            "runtimeExecutable": "tsx",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": [
+                "<node_internals>/**",
+            ],
+            "sourceMaps": true,
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+            ],
+        },
+        // {
+        //     "type": "node",
+        //     "request": "launch",
+        //     "name": "Launch Program",
+        //     "skipFiles": [
+        //         "<node_internals>/**"
+        //     ],
+        //     "program": "${workspaceFolder}/dist/index.js",
+        //     "outFiles": [
+        //         "${workspaceFolder}/**/*.js"
+        //     ]
+        // }
+    ]
+}

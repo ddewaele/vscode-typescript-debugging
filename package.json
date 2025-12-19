@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple typescript project to demonstrate typescript debugging in VSCode",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "tsx": "tsx",
     "build": "tsc",
