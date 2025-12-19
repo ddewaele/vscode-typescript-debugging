@@ -6,7 +6,7 @@ dotenv.config()
 
 async function main() {
 
-    const todo = new Todo(1, "Finish TypeScript project....", false, "major");
+    const todo = new Todo(1, "Finish TypeScript project.", false, "major");
     console.log("Initial Todo:", todo);
 
     todo.toggleCompletion();
