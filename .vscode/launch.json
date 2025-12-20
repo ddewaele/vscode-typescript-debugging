@@ -34,6 +34,8 @@
             "program": "${file}",
             // "program": "${workspaceFolder}/src/index.ts",
             "runtimeExecutable": "tsx",
+            "runtimeArgs": ["--preserve-symlinks"],
+
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "skipFiles": [
