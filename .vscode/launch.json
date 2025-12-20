@@ -21,10 +21,10 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            // "sourceMaps": true,
-            // "resolveSourceMapLocations": [
-            //     "${workspaceFolder}/**",
-            // ],
+            "sourceMaps": true,
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+            ],
         },
         {
             "name": "tsx",
@@ -41,9 +41,9 @@
             ],
             // source map and location needs to be specified in order for debugging to work properly
             "sourceMaps": true,
-            // "resolveSourceMapLocations": [
-            //     "${workspaceFolder}/**",
-            // ],
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+            ],
         },
         // {
         //     "type": "node",
