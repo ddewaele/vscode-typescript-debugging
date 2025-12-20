@@ -10,7 +10,7 @@ async function main() {
         temperature: 0,
     });
 
-    const res = await model.invoke("hello");
+    const res = await model.invoke("what is javascript?");
 
     console.log("Response:", res.content);
 }

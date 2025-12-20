@@ -2,25 +2,48 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Run & Debug (ts-node)",
+            "type": "node",
+            "trace": true,
+              "outFiles": [],
+
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--import",
+                "tsx"
+            ],
+            "program": "${workspaceFolder}/src/openai.ts",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            // "sourceMaps": true,
+            // "resolveSourceMapLocations": [
+            //     "${workspaceFolder}/**",
+            // ],
+        },
+        {
             "name": "tsx",
             "type": "node",
             "request": "launch",
             // if a dist folder is present it will launch the compiled js files instead of ts files. why ? no idea ..
             "program": "${file}",
             // "program": "${workspaceFolder}/src/index.ts",
-
             "runtimeExecutable": "tsx",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "skipFiles": [
                 "<node_internals>/**",
             ],
-
             // source map and location needs to be specified in order for debugging to work properly
             "sourceMaps": true,
-            "resolveSourceMapLocations": [
-                "${workspaceFolder}/**",
-            ],
+            // "resolveSourceMapLocations": [
+            //     "${workspaceFolder}/**",
+            // ],
         },
         // {
         //     "type": "node",
